@@ -1,0 +1,19 @@
+/* custom-datatable.css */
+
+/* Custom styling for the search input */
+.dataTables_wrapper input[type="search"] {
+  margin-top: 10px;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* Custom styling for the "No Records Found" message */
+#no-results-message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}

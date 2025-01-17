@@ -1,0 +1,2 @@
+"Process Name","Insp. Date",PN,LN,Item,Avg,Max,Min,Range,Std.,CPK,Emp#,MC#,Material,"Material LN",LSL,CSL,USL,XCL,XUCL,XLCL,RUCL
+1,Test-1,M013490,,1,7,10,7,6,6,T1,"Substrate QC",2016,,"No Machine","No Material","No Part",TXC,General,600751,1,No,1.960,1.990,1.930,1.00,13,1,1.960,1.990,1.930,1.930,16,5,"Ceramic Length",3,1.959,1.990,1.930,.060,.018,.53,pass

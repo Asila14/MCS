@@ -1,0 +1,108 @@
+// Check if user only provide id, item_id and mc_id
+	if (!empty($id)&&!empty($item_id)&&!empty($mc_id)) {
+        $conditions[] = "partnumber.id = ?";
+        $parameters[] = $id;
+		$conditions[] = "item.item_id = ?";
+        $parameters[] = $item_id;
+		$conditions[] = "machine.mc_id = ?";
+		$parameters[] = $mc_id;
+    }
+	else{
+		if (!empty($id)) {
+			$conditions[] = "partnumber.id = ?";
+			$parameters[] = $id;
+		}
+		if (!empty($item_id)) {
+			$conditions[] = "item.item_id = ?";
+			$parameters[] = $item_id;
+		}
+		if (!empty($mc_id)) {
+			$conditions[] = "machine.mc_id = ?";
+			$parameters[] = $mc_id;
+		}
+		if (!empty($x) && !empty($y)) {
+			$conditions[] = "measure_datetime BETWEEN ? AND ?";
+			$parameters[] = $x;
+			$parameters[] = $y;
+		}
+		if (!empty($a) && !empty($b)) {
+			$conditions[] = "measure_lot BETWEEN ? AND ?";
+			$parameters[] = $a;
+			$parameters[] = $b;
+		}
+	}
+	// Check if user only provide id, item_id, mc_id, x and y
+	if (!empty($id)&&!empty($item_id)&&!empty($mc_id)&&!empty($x) && !empty($y)) {
+        $conditions[] = "partnumber.id = ?";
+        $parameters[] = $id;
+		$conditions[] = "item.item_id = ?";
+        $parameters[] = $item_id;
+		$conditions[] = "machine.mc_id = ?";
+		$parameters[] = $mc_id;
+		$conditions[] = "measure_datetime BETWEEN ? AND ?";
+		$parameters[] = $x;
+		$parameters[] = $y;
+    }
+	else{
+		if (!empty($id)) {
+			$conditions[] = "partnumber.id = ?";
+			$parameters[] = $id;
+		}
+		if (!empty($item_id)) {
+			$conditions[] = "item.item_id = ?";
+			$parameters[] = $item_id;
+		}
+		if (!empty($mc_id)) {
+			$conditions[] = "machine.mc_id = ?";
+			$parameters[] = $mc_id;
+		}
+		if (!empty($x) && !empty($y)) {
+			$conditions[] = "measure_datetime BETWEEN ? AND ?";
+			$parameters[] = $x;
+			$parameters[] = $y;
+		}
+		if (!empty($a) && !empty($b)) {
+			$conditions[] = "measure_lot BETWEEN ? AND ?";
+			$parameters[] = $a;
+			$parameters[] = $b;
+		}
+	}
+	// Check if user only provide id, item_id, mc_id, x, y, a and b
+	if (!empty($id)&&!empty($item_id)&&!empty($mc_id)&&!empty($x) && !empty($y) && !empty($a) && !empty($b)) {
+        $conditions[] = "partnumber.id = ?";
+        $parameters[] = $id;
+		$conditions[] = "item.item_id = ?";
+        $parameters[] = $item_id;
+		$conditions[] = "machine.mc_id = ?";
+		$parameters[] = $mc_id;
+		$conditions[] = "measure_datetime BETWEEN ? AND ?";
+		$parameters[] = $x;
+		$parameters[] = $y;
+		$conditions[] = "measure_lot BETWEEN ? AND ?";
+		$parameters[] = $a;
+		$parameters[] = $b;
+    }
+	else{
+		if (!empty($id)) {
+			$conditions[] = "partnumber.id = ?";
+			$parameters[] = $id;
+		}
+		if (!empty($item_id)) {
+			$conditions[] = "item.item_id = ?";
+			$parameters[] = $item_id;
+		}
+		if (!empty($mc_id)) {
+			$conditions[] = "machine.mc_id = ?";
+			$parameters[] = $mc_id;
+		}
+		if (!empty($x) && !empty($y)) {
+			$conditions[] = "measure_datetime BETWEEN ? AND ?";
+			$parameters[] = $x;
+			$parameters[] = $y;
+		}
+		if (!empty($a) && !empty($b)) {
+			$conditions[] = "measure_lot BETWEEN ? AND ?";
+			$parameters[] = $a;
+			$parameters[] = $b;
+		}
+	}

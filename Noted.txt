@@ -1,0 +1,3 @@
+1 . CSV issue on server
+please follow this link (https://www.youtube.com/watch?v=YBzIpirIOY4)
+- MCS > properties > security > To change permission, click Edit > tick on read & write > OK

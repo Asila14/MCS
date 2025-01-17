@@ -1,0 +1,15 @@
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'oci8_12c' (tried: ext\oci8_12c (The specified module could not be found), ext\php_oci8_12c.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'oci8_19' (tried: ext\oci8_19 (The specified module could not be found), ext\php_oci8_19.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_firebird' (tried: ext\pdo_firebird (The specified module could not be found), ext\php_pdo_firebird.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci' (tried: ext\pdo_oci (The specified module could not be found), ext\php_pdo_oci.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_sqlsrv_81_ts' (tried: ext\php_sqlsrv_81_ts (The specified module could not be found), ext\php_php_sqlsrv_81_ts.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_sqlsrv_81_ts' (tried: ext\php_pdo_sqlsrv_81_ts (The specified module could not be found), ext\php_php_pdo_sqlsrv_81_ts.dll (The specified module could not be found)) in Unknown on line 0
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in C:\wamp64\www\MCS\includes\navbar.php on line 2
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  Undefined global variable $_SESSION in C:\wamp64\www\MCS\includes\navbar.php on line 26
+[05-Jun-2024 02:10:37 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\MCS\includes\navbar.php on line 26
+[05-Jun-2024 02:10:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sqlsrv_connect() in C:\wamp64\www\MCS\includes\connect.php:4
+Stack trace:
+#0 C:\wamp64\www\MCS\includes\navbar.php(36): include()
+#1 C:\wamp64\www\MCS\process.php(34): include('...')
+#2 {main}
+  thrown in C:\wamp64\www\MCS\includes\connect.php on line 4

@@ -1,0 +1,35 @@
+// Delete data
+if (isset($_GET['delete_id'])) {
+    $measureId = $_GET['delete_id'];
+
+    // Delete the record from the measurement table
+    $sqlMeasurement = "DELETE FROM measurement WHERE id='" . $measureId . "'";
+    $resultDelete = sqlsrv_query($con, $sqlMeasurement);
+
+    if ($resultDelete) {
+        // Use Sweetalert to show a success message
+        echo '
+            <script>
+                swal({
+                    title: "Deleted!",
+                    text: "The record has been deleted.",
+                    icon: "success",
+                    button: "OK",
+                }).then(() => {
+                    window.location.href = "admin_measurement_list.php";
+                });
+            </script>';
+    } else {
+        // Use Sweetalert to show an error message
+        echo '
+            <script>
+                swal({
+                    title: "Failed!",
+                    text: "Failed to delete the record.",
+                    icon: "error",
+                    button: "OK",
+                });
+            </script>
+        ';
+    }
+}
