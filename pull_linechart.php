@@ -103,23 +103,6 @@ if (isset($_GET['spec_id']) && isset($_GET['measure_id']) && isset($_GET['item_i
                     borderDash: [5, 5],
                     data: dataUSL,
                     fill:false,
-                  },
-                  {
-                    label: 'CSL',
-                    backgroundColor: 'rgb(239, 95, 67)',
-                    borderColor: 'rgb(239, 95, 67)',
-                    pointStyle: false,
-                    data: dataCSL,
-                    fill:false,
-                  },
-                  {
-                    label: 'LSL',
-                    backgroundColor: 'rgb(239, 95, 67)',
-                    borderColor: 'rgb(239, 95, 67)',
-                    pointStyle: false,
-                    borderDash: [5, 5],
-                    data: dataLSL,
-                    fill:false,
                   }]
                 };
                 //config block
